@@ -69,6 +69,13 @@ src/
 - **shared/** → Recursos reutilizables sin conocimiento del dominio. Ej: `Button`, hooks.
 - **app/** → Configuración global. Ej: rutas, providers, temas.
 
+### Convenciones CSS
+
+- **CSS Modules** para aislamiento de estilos (sin colisiones globales)
+- **Modificadores flat** (ej. `.heading1`, `.btnPrimary`) en lugar de BEM estricto
+- **Variables CSS** del design system (`--color-brand`, `--spacing-md`)
+- **Código siempre en inglés** (clases, variables, props)
+
 Esta estructura permite escalar sin acoplamiento y evita: componentes dispersos,
 dependencias cruzadas y mezcla de lógica de negocio con config global.
 

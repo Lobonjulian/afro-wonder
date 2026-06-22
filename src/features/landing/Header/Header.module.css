@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--color-border);
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+}
+
+.headerNav,
+.headerActions {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.headerList {
+  display: flex;
+  gap: var(--spacing-sm);
+
+  a {
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
