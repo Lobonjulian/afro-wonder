@@ -1,0 +1,32 @@
+.sectionTitleContainer {
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+
+  .sectionTitleGroup {
+    .sectionTitle {
+      margin-bottom: var(--spacing-sm);
+      font-size: var(--font-size-3xl);
+    }
+
+    .sectionSubtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-base);
+    }
+  }
+
+  .btnView {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-brand);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-brand-hover);
+    }
+  }
+}

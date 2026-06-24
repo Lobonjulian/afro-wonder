@@ -19,6 +19,13 @@
   border-width: 0;
 }
 
+.main-layout {
+  flex-grow: 1;
+  width: var(--container-max);
+  margin-inline: auto;
+  display: flex;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
