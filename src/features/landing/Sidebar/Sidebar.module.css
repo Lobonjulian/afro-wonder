@@ -55,26 +55,6 @@
   }
 }
 
-/* SidebarNav */
-.sidebarNav {
-  margin-bottom: var(--spacing-xl);
-
-  .sidebarLinks {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xs);
-
-    .sidebarLink {
-      padding-block: var(--spacing-xs);
-      transition: color 0.3s;
-
-      &:hover {
-        color: var(--color-brand-hover);
-      }
-    }
-  }
-}
-
 /* SidebarCTA */
 .sidebarCta {
   border-top: 1px solid var(--color-border);
