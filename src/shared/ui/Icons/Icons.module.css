@@ -1,0 +1,8 @@
+.socialIcon {
+  --size: 24px;
+
+  width: var(--size);
+  height: var(--size);
+  display: inline-flex;
+  fill: currentColor;
+}

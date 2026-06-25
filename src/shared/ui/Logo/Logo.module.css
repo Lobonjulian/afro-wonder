@@ -1,0 +1,32 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logoImg,
+.logoIcon {
+  height: 40px;
+  width: auto;
+}
+
+.logoText {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-border);
+}
+
+@media (max-width: 767px) {
+  .logoText {
+    font-size: var(--font-size-lg);
+  }
+
+  .logoImg {
+    height: 32px;
+  }
+}
