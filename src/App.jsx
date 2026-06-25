@@ -1,5 +1,6 @@
 import Header from "@/features/landing/Header/Header";
 import Sidebar from "@/features/landing/Sidebar/Sidebar";
+import SpecialtiesSection from "@/features/landing/Specialties/Specialties";
 import NewServices from "@/features/NewServices/NewServices";
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
       <Header />
       <main className="main-layout">
         <Sidebar />
-        <NewServices />
+        <section>
+          <NewServices />
+          <SpecialtiesSection />
+        </section>
       </main>
     </div>
   );

@@ -1,0 +1,79 @@
+.specialtiesSection {
+  padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+.specialtiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+/* SpecialtyCard */
+.specialtyCard {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.1),
+      0 16px 32px rgba(0, 0, 0, 0.15),
+      0 24px 48px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.specialtyLink {
+  display: block;
+}
+
+.specialtyContent {
+  height: 100%;
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+
+  .specialtyTitle {
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+  }
+
+  .specialtyImage {
+    --size: 100%;
+
+    flex: 1;
+    width: var(--size);
+    height: 200px;
+    overflow: hidden;
+
+    .specialtyImg {
+      width: var(--size);
+      height: var(--size);
+      border-radius: var(--radius-xl);
+      object-fit: cover;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.specialty-violeta {
+  background: linear-gradient(135deg, #987cda 0%, #700ce2 100%);
+}
+
+.specialty-amarillo {
+  background: linear-gradient(135deg, #f5f506 0%, #ffcc00 100%);
+}
+
+.specialty-verde {
+  background: linear-gradient(135deg, #7ea95e 0%, #4b8f4d 100%);
+}
