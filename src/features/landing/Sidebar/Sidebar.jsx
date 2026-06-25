@@ -1,12 +1,12 @@
-import Button from "@/shared/ui/Button/Button";
 import Container from "@/shared/ui/Container/Container";
-import Heading from "@/shared/ui/Heading/Heading";
 import Input from "@/shared/ui/Input/Input";
+import NavLinks from "@/shared/ui/NavLinks/NavLinks";
 import { sidebarCTA, sidebarLinks } from "./sidebar.data";
+import SidebarCTA from "./SidebarCTA";
 
 import styles from "./Sidebar.module.css";
 
-function Sidebar() {
+export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <Container className={styles.sidebarContainer}>
@@ -18,32 +18,14 @@ function Sidebar() {
           placeholder="Buscar..."
         />
 
-        <nav aria-label="navegación lateral" className={styles.sidebarNav}>
-          <ul className={styles.sidebarLinks}>
-            {sidebarLinks.map((link) => (
-              <li key={link.id} className={styles.sidebarLink}>
-                <a href={link.href}>{link.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <NavLinks
+          links={sidebarLinks}
+          ariaLabel="Navegación lateral"
+          direction="vertical"
+        />
 
-        <div className={styles.sidebarCta}>
-          <Heading level={3} className={styles.ctaTitle}>
-            {sidebarCTA.title}
-          </Heading>
-          <p className={styles.ctaDescription}>{sidebarCTA.description}</p>
-          <Button
-            as="a"
-            href={sidebarCTA.buttonHref}
-            className={styles.ctaButton}
-          >
-            {sidebarCTA.buttonText}
-          </Button>
-        </div>
+        <SidebarCTA {...sidebarCTA} />
       </Container>
     </aside>
   );
 }
-
-export default Sidebar;

@@ -1,0 +1,25 @@
+.navLink {
+  .navList {
+    display: flex;
+    gap: var(--spacing-xs);
+    padding-block: var(--spacing-xs);
+    a {
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+}
+
+.vertical {
+  flex-direction: column;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--color-brand-hover);
+  }
+}
+
+.horizontal {
+  flex-direction: row;
+}

@@ -23,14 +23,3 @@
     display: block;
   }
 }
-
-.headerList {
-  display: flex;
-  gap: var(--spacing-sm);
-
-  a {
-    &:hover {
-      color: var(--color-accent);
-    }
-  }
-}
